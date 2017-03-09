@@ -1,0 +1,18 @@
+.yyy *{
+  outline: 1px solid red;
+}
+
+@import "variables";
+@import "mixins";
+
+@import "reset";
+@import "breakpoints";
+@import "typography";
+
+@import "header";
+@import "main";
+@import "subscribe";
+@import "footer";
+
+
+
