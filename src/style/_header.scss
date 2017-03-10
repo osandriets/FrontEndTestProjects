@@ -1,1 +1,13 @@
 @import "variables";
+header{
+  height: 145px;
+  border-bottom: 1px solid red;
+  >div{
+    display: flex;
+    flex-direction: row;
+  }
+
+  ul{
+    display: flex;
+  }
+}
