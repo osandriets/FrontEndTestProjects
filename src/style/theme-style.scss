@@ -1,6 +1,9 @@
-.yyy *{
+.yyy * {
   outline: 1px solid red;
 }
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 
 @import "variables";
 @import "mixins";

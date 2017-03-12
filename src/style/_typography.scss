@@ -1,12 +1,109 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 
-
-h1{
-  font-family: 'Lato', sans-serif;
+body {
+  color: $theme-color;
 }
 
-p{
+h1, h3 {
   font-family: 'Playfair Display', serif;
+  font-weight: normal;
+  color: $theme-color-dark;
+  text-align: center;
+}
 
+h1 {
+  font-size: 58px;
+  margin-bottom: 33px;
+}
+
+h3 {
+  font-size: 38px;
+  margin-bottom: 30px;
+}
+
+.name {
+  font-family: 'Playfair Display', serif;
+  font-weight: normal;
+  letter-spacing: 0;
+  margin-bottom: 10px;
+  color: #474747;
+}
+
+a, p {
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 1px;
+}
+
+a {
+  @extend .font-sm;
+  color: $theme-color;
+  text-decoration: none;
+  cursor: pointer;
+  letter-spacing: 1px;
+  &:hover {
+    color: $theme-color-dark;
+  }
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.old {
+  text-decoration: line-through;
+}
+
+.accent {
+  color: $theme-color-accent;
+}
+
+.btn-more {
+  display: inline-block;
+  padding: 18px 22px 18px 8px;
+  position: relative;
+  &:before {
+    right: 10px;
+    content: "...";
+    position: absolute;
+    transition: all 0.3s;
+  }
+  &:hover {
+    &:before {
+      right: 2px;
+    }
+  }
+}
+
+.btn-arrow-right {
+  @extend .font-sm;
+  display: inline-block;
+  border-radius: 50px;
+  border: 2px solid rgba(256, 256, 256, 0.3);
+  color: #fff;
+  overflow: hidden;
+  background: none;
+  padding: 18px 123px 18px 26px;
+  letter-spacing: 1.2px;
+  outline: none;
+  position: relative;
+  transition: all 0.3s;
+
+  &:before {
+    right: 14px;
+    top: 12px;
+    content: "";
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    background: url("../img/arrow_right_white.svg");
+    transition: all 0.3s;
+  }
+
+  &:hover {
+    border: 2px solid rgba(256, 256, 256, 1);
+    color: white;
+    &:before {
+      right: 10px;
+    }
+  }
 }

@@ -2,7 +2,5 @@
 ### Sass template
 .sass-cache/
 *.css.map
-
-.gitignore
 .idea/
-
+node_modules/

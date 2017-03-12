@@ -1,0 +1,28 @@
+footer {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  ul {
+    display: flex;
+  }
+
+  .logo {
+    width: 92px;
+    height: 100px;
+    margin-right: 120px;
+  }
+
+  .copyright {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: none;
+  }
+
+  .nav-bord a {
+    margin: 30px 27px;
+    color: $theme-color-dark;
+  }
+}

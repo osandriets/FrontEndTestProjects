@@ -1,0 +1,13 @@
+.subscribe {
+  padding: 70px 0;
+  text-align: center;
+  background: url("../img/bg.jpg") 100% top no-repeat;
+  background-size: cover;
+  p {
+    @extend .font-sm;
+    margin-bottom: 20px;
+  }
+  h3 {
+    color: white;
+  }
+}
