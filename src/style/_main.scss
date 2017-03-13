@@ -1,16 +1,34 @@
+
+body{
+  min-width: 300px;
+//  background: url("../../sourse/design.png") no-repeat top center;
+}
 .container {
   width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @include media-breakpoint-up(md) {
+    width: 720px;
+    padding-left: 0;
+    padding-right: 0;
+  }
   @include media-breakpoint-up(lg) {
+    width: 960px;
+  }
+  @include media-breakpoint-up(xl) {
     width: 1140px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
 .logo {
   width: 92px;
   height: 98px;
-  margin-right: 90px;
+  @include media-breakpoint-up(xl) {
+    margin-right: 90px;
+  }
 }
 
 .svg {
