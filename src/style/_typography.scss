@@ -17,7 +17,7 @@ h1 {
 
 h3 {
   font-size: 38px;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 }
 
 .name {
@@ -82,14 +82,17 @@ p {
   color: #fff;
   overflow: hidden;
   background: none;
-  padding: 18px 123px 18px 26px;
+  padding: 17px 50px 17px 24px;
   letter-spacing: 1.2px;
   outline: none;
   position: relative;
   transition: all 0.3s;
+  width: 300px;
+  max-width: 100%;
+  text-align: left;
 
   &:before {
-    right: 14px;
+    right: 11px;
     top: 12px;
     content: "";
     position: absolute;
@@ -103,7 +106,7 @@ p {
     border: 2px solid rgba(256, 256, 256, 1);
     color: white;
     &:before {
-      right: 10px;
+      right: 7px;
     }
   }
 }

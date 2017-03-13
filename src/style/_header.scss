@@ -1,7 +1,11 @@
 @import "variables";
 
 .pre-header {
+  display: none;
   border-bottom: $border;
+  @include media-breakpoint-up(xs) {
+    display: block;
+  }
   .container {
     display: flex;
     justify-content: space-between;
@@ -64,7 +68,10 @@ header {
     display: flex;
   }
   .bag {
-    display: flex;
+    display: none;
+    @include media-breakpoint-up(xs) {
+      display: flex;
+    }
     > div {
       padding: 16px;
     }
@@ -98,9 +105,17 @@ header {
     @extend .font-sm;
   }
 }
-
+.nav-bord{
+  display: none;
+  @include media-breakpoint-up(md) {
+    display: flex;
+  }
+}
 .nav-bord a {
-  margin: 30px 28.2px;
+  margin: 10px 10px;
+  @include media-breakpoint-up(lg) {
+    margin: 30px 28.2px;
+  }
   display: block;
   position: relative;
   &:after {

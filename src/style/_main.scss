@@ -1,7 +1,7 @@
 
 body{
   min-width: 300px;
-//  background: url("../../sourse/design.png") no-repeat top center;
+ // background: url("../../sourse/design.png") no-repeat top center;
 }
 .container {
   width: 100%;
@@ -37,7 +37,7 @@ body{
 }
 
 main {
-  margin-bottom: 40px;
+  margin-bottom: 41px;
   ul {
     display: flex;
   }
@@ -45,13 +45,36 @@ main {
   .catalog {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-
+    justify-content: center;
+    @include media-breakpoint-up(xl) {
+      justify-content: space-between;
+    }
     figure {
+      padding: 0 15px;
+      @include media-breakpoint-up(xl) {
+        padding: 0;
+      }
       text-align: center;
       margin-bottom: 24px;
+      position: relative;
       span {
         margin: 0 4px;
+      }
+    }
+    .new{
+      &:after{
+        position: absolute;
+        content: "new";
+        width: 48px;
+        height: 25px;
+        background: $border-color-accent;
+        line-height: 25px;
+        border-radius: 25px;
+        top: 26px;
+        left: 26px;
+        color: white;
+        font-size: 11px;
+        text-transform: uppercase;
       }
     }
     img {
@@ -60,7 +83,7 @@ main {
   }
   .nav-bord {
     justify-content: center;
-    margin-bottom: 25px;
+    margin-bottom: 21px;
   }
   .pagination {
     text-align: center;

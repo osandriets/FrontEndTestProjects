@@ -1,9 +1,12 @@
 footer {
-  .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  @include media-breakpoint-up(xs) {
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
   }
+
   ul {
     display: flex;
   }
@@ -11,7 +14,9 @@ footer {
   .logo {
     width: 92px;
     height: 100px;
-    margin-right: 120px;
+    @include media-breakpoint-up(xl) {
+      margin-right: 120px;
+    }
   }
 
   .copyright {
@@ -19,10 +24,15 @@ footer {
     font-weight: 700;
     letter-spacing: 1.2px;
     text-transform: none;
+    padding-bottom: 20px;
+    @include media-breakpoint-up(xs) {
+      padding-bottom: 0;
+    }
   }
-
   .nav-bord a {
-    margin: 30px 27px;
     color: $theme-color-dark;
+    @include media-breakpoint-up(lg) {
+      margin: 30px 27px;
+    }
   }
 }
